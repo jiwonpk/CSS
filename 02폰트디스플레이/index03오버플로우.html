@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .abox{
+            border:  1px solid #777;
+            height: 100px;  /* 원래 높이는, 나중에는 컨텐츠가 자연스럽게 채워서 내려오도록 가만히 두는거에요*/
+            width: 300px;
+
+            /* overflow: visible; */
+            /* overflow: scroll; */
+            /* overflow: hidden; 숨김 */
+            overflow: auto; /* 글이 넘치면 스크롤생성, 없으면 생성x*/
+        }
+
+
+
+        .bbox{
+            border: 1px solid #777;
+            width: 300px;
+            height: 100px;
+
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap; /* 줄바꿈x */
+        }
+
+        .cbox{
+            border: 1px solid #777;
+            width: 300px;
+            height: 100px;
+
+            overflow-x: scroll;
+            overflow-y: scroll;
+            white-space: nowrap;
+        }
+        .cbox table{
+            border: 1px solid #777;
+        }
+        .cbox td{
+            border: 1px solid #777;
+        } 
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <p class="abox">
+        사람이 언제 죽는다고 생각하나?
+
+        심장이 총알에 뚫었을 때?
+
+        아니
+
+        불치병에 걸렸을 때?
+
+        아니
+
+
+        맹독 버섯 수프를 먹었을 때?
+
+        아니..
+
+        사람들에게서....
+
+        잊혀졌을 때다..!
+        
+    </p>
+
+    <div class="bbox">
+        (히루루크)
+        <p>사람이 언제 죽는다고 생각하나?</p>
+
+        <p>심장이 총알에 뚫었을 때?</p>
+
+        <p>아니</p>
+
+        <p>불치병에 걸렸을 때?</p>
+
+        <p>아니</p>
+
+        <p>맹독 버섯 수프를 먹었을 때?</p>
+
+        <p>아니..</p>
+
+        <p>사람들에게서....</p>
+
+        (샹크스)
+        <p>잊혀졌을 때다..!</p>
+
+        <p>나는 술이든 음식이든 머리에 뒤집어쓰거나</p>
+
+        <p>얼굴에 침을 뱉는다든가 하는 건 그냥 웃어넘길 수 있다</p>
+
+        <p>하지만 어떤 이유에서든 나는</p> 
+
+        <p>내 친구를 상처 입히는 녀석은 용서하지 않는다</p>
+
+    </div>
+
+
+    <div class="cbox">
+        <h3>제목</h3>
+        <table>
+            <tr>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+                <td>제목</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
