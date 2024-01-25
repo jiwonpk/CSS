@@ -1,0 +1,59 @@
+/* 부트스트랩에서 box를 하나만 사용해서 가운데 정렬하려면, float 해제하면 됩니다 */
+.join-style {
+    margin: 0 auto;
+    float: none;
+    box-shadow: 0 8px 16px rgb(0,0,0, 0.3);
+    padding: 30px;
+}
+/* ==========상품 디테일============= */
+.detail-content {
+    min-height: 300px; /* 컨텐츠영역 보정 */
+}
+.detail-content > .title {
+    font-size: 23px;
+    font-weight: normal;
+}
+.detail-content > .price {
+    font-size: 30px;    
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 10px 0;
+}
+.detail-content > .deliver {
+    color: #999;
+}
+
+.detail-control .price {overflow: hidden;}
+.detail-control .price .left {float: left; font-size: 15px; margin-top: 10px;}
+.detail-control .price .right {float: right; font-size: 30px; font-weight: 900;}
+
+.detail-control {margin-top: 30px;}
+.detail-control .order {overflow: hidden;}
+.detail-control .order .left{float: left;}
+.detail-control .order .right{float: right;}
+.detail-control .order button {
+    width: 50%;
+    padding: 10px 0;
+    border: 1px solid #e3e3e3;
+    color: #fff;
+    background-color: #337ab7;
+    font-size: 15px;
+}
+/* ========= 탭 디자인=========== */
+.mytab > li {
+    width: 25%;
+    text-align: center;
+}
+.mytab > li > a {
+    color: #000;
+    border: 1px solid #e3e3e3;
+    margin: 0;
+    border-radius: 0;
+}
+.nav-tabs > li.active>a,
+.nav-tabs > li.active>a:focus,
+.nav-tabs > li.active>a:hover {
+    color: red;
+}
+
+

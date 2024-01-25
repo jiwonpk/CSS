@@ -1,0 +1,141 @@
+* {margin: 0; padding: 0;}
+ul, li, ol, dd, dl {list-style: none;}
+img {max-width: 100%; height: auto;}
+/* 이것뿐만 아니라, 초기화 선언이 더 들어갈 수 있음 */
+
+#header .wrap {border-top: 3px solid #00d344;}
+#header .wrap .top {width: 1008px; margin: 0 auto;}
+
+#header .top {overflow: hidden;}
+#header .top .left {float: left; padding: 11px 7px; font-size: 12px; color: #999999;}
+#header .top .right {float: right;}
+
+#header .top .right li {display: inline-block; border-left:  1px solid #999999; margin-top: 11px;}
+#header .top .right li a {display: block;  padding: 0 7px; font-size: 12px; color: #999999; text-decoration: none; font-weight: bold;}
+#header .top .right li:nth-child(1) {border: none; }
+
+#header .wrap-mid {border-top: 1px solid #999999;}
+#header .wrap-mid .mid {width: 1008px; margin: 0 auto; overflow: hidden;}
+#header .wrap-mid .mid .left {float: left;}
+#header .wrap-mid .mid fieldset {
+    float: left;
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    border: none;
+    background: url(img_melon/melon_search.png) ;
+    overflow: hidden;
+    
+}
+#header .wrap-mid .mid .right {float: right; margin-top: 10px;}
+#header .wrap-mid .mid fieldset input {float: left; margin: 7px 0 0 18px; width: 260px; height: 25px; border: none;}
+#header .wrap-mid .mid fieldset button {float: right; width: 45px; height: 40px; background: url(img_melon/melon_btn.png) #fff; border: none; cursor: pointer;}
+
+
+#header .wrap-bot {border-bottom: 1px solid #999999;}
+#header .wrap-bot .bot {overflow: hidden; width: 1008px; margin: 0 auto;}
+#header .wrap-bot .left {float: left;}
+#header .wrap-bot .right {float: right;}
+
+#header .wrap-bot .left li,
+#header .wrap-bot .right li {display: inline-block;}
+#header .wrap-bot .left li a,
+#header .wrap-bot .right li a {display: block; color: #000; font-weight: 900; padding: 13px 7px; text-decoration: none;}
+
+#header .wrap-bot .left li a:hover {color: #00d344;}
+
+/* ================================================== */
+#section {margin-top: 50px;}
+#section .wrap {margin: 0 auto; width: 1008px;}
+
+.content {overflow: hidden;}
+.content .list-wrap{float: left; width: 480px;}
+.content .slide-wrap{float: left; width: 236px; margin-left: 4px;}
+.content .user-wrap{float: left; width: 280px; margin-left: 8px;}
+
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li{float: left; width: 33.3333%; position: relative;}
+
+.list-wrap ul li a {position: relative; display: block; width: 156px; height: 156px;}
+.list-wrap ul li a > span{
+ position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #000; 
+    opacity: 0.7;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+} 
+.list-wrap ul li .hover-content {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0;/* 숨겨놓는다 */
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.list-wrap ul li:hover > .hover-content {
+    opacity: 1;
+}
+.list-wrap ul li .hover-content > a{
+    position: relative;
+    left: 0;
+    top: 60px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+.list-wrap li.first { /* li인데 클래스 .first를 가진 li */
+    margin-bottom: 4px;
+}
+
+.login-wrap {
+    border: 1px solid #999999;
+    padding: 20px 15px;
+    height: 119px;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+}
+.login-wrap .top {overflow: hidden;}
+.login-wrap .top .left {float: left; font-size: 13px; color: #999999;}
+.login-wrap .top .right {float: right; font-size: 13px; color: #999999;}
+.login-wrap > button {
+    width: 100%; 
+    border: none; 
+    background-color: #00d344; 
+    color: #fff; 
+    font-weight: 900; 
+    padding: 10px 5px;
+    margin-top: 5px;
+}
+.promotion-wrap {
+    margin-top: 8px;
+}
+
+
+/* ================================================================================== */
+
+.banner{width: 1008px; margin: 0 auto; margin: 20px 0px 0px;}
+
+.hot {float: left; width: 704px; margin-top: 20px;}
+.hot h4{border-bottom: 1px solid #999; padding: 5px 0px;}
+.hot h4 span{font-size: 9px; color: #999;}
+.hot ul{overflow: hidden;}
+.hot ul li{float: left; width: 223px; margin: 16px 0 0 16px;}
+.hot .inner a{text-decoration: none;}
+.hot .inner .title{font-size: 15px; color: #000;}
+.hot .cont{font-size: 10px; color: #777;}
+.hot .inner .hit{font-size: 10px; margin-top: 5px;}
+.hot img{width: 100%;height: auto;}
+.hot ul li.li1{margin-left: 0;}
+.hot .inner .title{display: block;}
+.hot .inner .hit{display: block;}
+
